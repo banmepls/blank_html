@@ -10,7 +10,6 @@ renderer.domElement.setAttribute('id', 'Minecraft3DObj');
 document.body.insertBefore(renderer.domElement, document.body.firstChild);
 
 
-
 const aLight = new THREE.AmbientLight(0x404040, 1.2);
 scene.add(aLight);
 
@@ -18,8 +17,8 @@ const pLight = new THREE.PointLight(0xFFFFFF, 1.2);
 pLight.position.set(0, -3, 7);
 scene.add(pLight);
 
-//const helper = new THREE.PointLightHelper(pLight);
-//scene.add(helper);
+// const helper = new THREE.PointLightHelper(pLight);
+// scene.add(helper);
 
 let loader = new THREE.GLTFLoader();
 let obj = null;
