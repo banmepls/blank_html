@@ -23,7 +23,7 @@ scene.add(pLight);
 let loader = new THREE.GLTFLoader();
 let obj = null;
 
-loader.load('model/scene.gltf', function(gltf) {
+loader.load('/model/scene.gltf', function(gltf) {
 	obj = gltf;
 	obj.scene.scale.set(1.3, 1.3, 1.3);
 
